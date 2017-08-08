@@ -20,15 +20,15 @@ console.log (max(5,10));
 // Then, write and example of using the function.
 
 function maxOfThree(a, b, c){
-  if (a > b && c){
+  if (a > b && a > c){
     return a;
-  }else if (b > a && c){
+  }else if (b > a && b > c){
      return b;
-  }else if (c > a && b){
+  }else if (c > a && c > b){
      return c;
   }
 }
-     console.log(maxOfThree(10,5,3));
+     console.log(maxOfThree(3,5,10));
 
     // Your answer here
 
@@ -52,19 +52,26 @@ console.log (isVowel('a'));
 // 4.
 // Write a function called `sum` that takes two parameters and returns the sum of those 2 numbers.
 // Then, write and example of using the function.
-
-
+function sum(1,2) {
+return (1 + 2);
+}
+console.log(sum);
 
 // 5.
 // Write a function named `avg` that takes 3 parameters and returns the average of those 3 numbers.
 // Then, write and example of using the function.
+function avg(2, 4, 6) {
+return (2 + 4 + 6) / 3;
 
-
+}
+console.log(avg(2, 4, 6));
 
 // 6.
 // Write a function called `getLength` that takes one parameter (a string) and returns the length
 // Then, write and example of using the function.
-
+function getLength("string") {
+  return string.length;
+}
 
 
 // 7.
@@ -72,8 +79,15 @@ console.log (isVowel('a'));
 // and returns `true` if the second parameter is greater than the first.
 // Otherwise the function should return `false`.
 // Then, write and example of using the function.
+function greaterThan(a, b) {
+if (b > a) {
+return true;
+ } else {
+  return false;
+ }
 
-
+}
+console.log(greaterThan(2, 4));
 
 // 8.
 // Write a function called `greet` that takes a
@@ -81,7 +95,11 @@ console.log (isVowel('a'));
 // is formated like "Hello, Name!" where *Name*
 // is the parameter that was passed in.
 // Then, write and example of using the function.
+function greet(parameter) {
+  return "Hello, " + parameter + "!";
 
+}
+console.log(greet("Myron"))
 
 
 // 9.
@@ -92,3 +110,7 @@ console.log (isVowel('a'));
 // words: "quick", "fox", "fence"
 // sentence: "quick brown fox jumps over the fence"
 // Then, write and example of using the function.
+
+function madlib(word1, word2, word3, word4)
+return "When" + word1 + " " + words2 + " " + word3 + " " + "Marching" + " " + word4 + "!"
+console.log(madlib("the", "Saints", "go", "in"));
